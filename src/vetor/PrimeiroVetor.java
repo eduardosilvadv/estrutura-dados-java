@@ -32,8 +32,22 @@ public class PrimeiroVetor {
         }
         tamanho--;
     }
+    public void removerPorIndiceNull(int indice) {
+        if (indice < 0 || indice >= tamanho) {
+            System.out.println("Índice inválido!");
+            return;
+        }
+        elementos[indice] = 0;
+    } 
 
-
+    public void adicionarNull(int elemento) {
+        for (int i = 0; i < elementos.length; i++) {
+            if (elementos[i] == 0) { // Preenche o primeiro espaço nulo encontrado
+                elementos[i] = elemento;
+                return;
+            }
+        }
+    } 
 
 
 

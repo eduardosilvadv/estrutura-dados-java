@@ -14,9 +14,10 @@ public class App {
       System.out.println("Indece 2 = " + vetor.getElemento(2));
       System.out.println("Tamanho vetor 1 = " + vetor.getTamanho());
       System.out.println("--------------------------");
-      vetor.removerPorIndice(2);
-      System.out.println("Indece 2 = " + vetor.getElemento(2));
-      System.out.println("Tamanho vetor 2 = " + vetor.getTamanho());
+      vetor.removerPorIndiceNull(0);
+      vetor.adicionarNull(20);
+     // System.out.println("Indece 2 = " + vetor.getElemento(2));
+      //System.out.println("Tamanho vetor 2 = " + vetor.getTamanho());
       vetor.exibir();
        
 
